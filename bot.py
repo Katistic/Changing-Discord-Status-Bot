@@ -32,7 +32,7 @@ Press enter to exit...
             self.anim = d["animType"] if d["animType"] == 0 or d["animType"] == 1 else 0
 
             if self.anim == 0:
-                self.sects = [" "] + self.status.split(" ") ## Split into words
+                self.sects = self.status.split(" ") ## Split into words
             else:
                 ## Split into character combos
                 self.sects = [" "]
